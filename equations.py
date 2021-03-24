@@ -8,15 +8,6 @@ def powfunction (x:float,i):
     return answer
 
 
-
-def exponent (x:float):
-     answer=1
-     for i in  range(1,100):
-         answer=answer+(powfunction(x,i)) /assembly( i)
-     return answer
-
-
-
 def assembly (i):
     if i<1:
         return 1
@@ -25,6 +16,15 @@ def assembly (i):
         for z in range(1,i):
             answer = answer*z
         return answer 
+        
+        
+
+def exponent (x:float):
+     answer=1
+     for i in  range(1,100):
+         answer=answer+(powfunction(x,i)) /assembly( i)
+     return answer
+
     
 
 
